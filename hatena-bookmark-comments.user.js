@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         C-q to show Hatena Bookmark Comments
+// @name         Hatena Bookmark Comments
 // @namespace    https://github.com/oooooooo/
 // @version      1.2.0
 // @description  Show styled Hatena comments on Ctrl+Q
