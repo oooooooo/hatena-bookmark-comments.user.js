@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hatena Bookmark Comments
 // @namespace    https://github.com/oooooooo/
-// @version      1.2.0
+// @version      1.2.1
 // @description  Show styled Hatena comments on Ctrl+Q
 // @match        *://*/*
 // @grant        GM_xmlhttpRequest
