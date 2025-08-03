@@ -8,6 +8,7 @@
 // @connect      b.hatena.ne.jp
 // @updateURL    https://github.com/oooooooo/hatena-bookmark-comments.user.js/raw/refs/heads/main/hatena-bookmark-comments.user.js
 // @downloadURL  https://github.com/oooooooo/hatena-bookmark-comments.user.js/raw/refs/heads/main/hatena-bookmark-comments.user.js
+// @author       oooooooo
 // ==/UserScript==
 
 (() => {
