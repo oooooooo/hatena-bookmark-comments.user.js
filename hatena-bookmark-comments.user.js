@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Hatena Bookmark Comments
+// @name         はてなブックマークのコメントを表示
 // @namespace    https://github.com/oooooooo/hatena-bookmark-comments.user.js
-// @version      1.2.1
+// @version      1.2.2
 // @description  Show styled Hatena comments on Ctrl+Q
 // @match        *://*/*
 // @grant        GM_xmlhttpRequest
@@ -60,6 +60,7 @@
 
 					popover.innerHTML = `
             ${styleLinks}
+						<base href="https://b.hatena.ne.jp/">
             <style>
               body { font-family: sans-serif; }
               #hatena-comments-popover form {
