@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         はてなブックマークのコメントを表示
 // @namespace    https://github.com/oooooooo/hatena-bookmark-comments.user.js
-// @version      1.2.2
+// @version      1.2.3
 // @description  Show styled Hatena comments on Ctrl+Q
 // @match        *://*/*
 // @grant        GM_xmlhttpRequest
@@ -52,9 +52,7 @@
 					popover.style.width = "800px";
 					popover.style.maxHeight = "80vh";
 					popover.style.overflow = "auto";
-					popover.style.border = "1px solid #ccc";
 					popover.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
-					popover.style.background = "white";
 					popover.style.zIndex = 9999;
 					popover.style.borderRadius = "8px";
 
@@ -63,13 +61,27 @@
 						<base href="https://b.hatena.ne.jp/">
             <style>
               body { font-family: sans-serif; }
+              /* Hatena's stylesheets follow prefers-color-scheme, so the popover
+                 must match it too or the comment text ends up white on white. */
+              #hatena-comments-popover {
+                background: #fff;
+                color: #333;
+                border: 1px solid #ccc;
+              }
               #hatena-comments-popover form {
                 position: sticky;
                 top: 0;
-                background: #fff;
+                background: inherit;
                 padding: 5px;
                 text-align: right;
                 z-index: 10;
+              }
+              @media (prefers-color-scheme: dark) {
+                #hatena-comments-popover {
+                  background: #1c1c1c;
+                  color: #e8e8e8;
+                  border-color: #444;
+                }
               }
               .entry-comments {
                 text-align: left !important;
